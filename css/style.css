@@ -18,7 +18,23 @@ body {
   color: #777;
   background: #fff;
 }
-
+/* Mine css */
+.CustomA{
+  color: white;
+}
+.Upper-Header{
+  background-color: #008ee0;
+  color: white;
+  height: 30px;
+  padding: 0 50px;
+  width: 100%;
+}
+.flex{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+/*  */
 #page {
   position: relative;
   overflow-x: hidden;
