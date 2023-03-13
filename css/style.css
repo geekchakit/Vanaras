@@ -22,8 +22,21 @@ body {
 .CustomA{
   color: white;
 }
+
+.CustomA:hover{
+  color: white;
+}
+
 .Upper-Header{
-  background-color: #008ee0;
+  background-color: #09C6AB;
+  color: white;
+  height: 30px;
+  padding: 0 50px;
+  width: 100%;
+}
+
+.Copyright-div{
+  background-color: #09C6AB;
   color: white;
   height: 30px;
   padding: 0 50px;
