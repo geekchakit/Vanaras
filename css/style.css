@@ -28,7 +28,7 @@ body {
 }
 
 .Upper-Header{
-  background-color: #09C6AB;
+  background-color: #f17329;
   color: white;
   height: 30px;
   padding: 0 50px;
@@ -36,7 +36,7 @@ body {
 }
 
 .Copyright-div{
-  background-color: #09C6AB;
+  background-color: #f17329;
   color: white;
   height: 30px;
   padding: 0 50px;
@@ -327,7 +327,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-bottom: 30px;
 }
 #gtco-header .form-wrap {
-  border-top: 10px solid #09C6AB;
+  border-top: 10px solid #f17329;
   position: relative;
   width: 100%;
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
@@ -1320,13 +1320,17 @@ form label {
 }
 
 .btn-primary {
-  background: #09C6AB;
+  /* background: #09C6AB; */
+  background: #f17329;
   color: #fff;
-  border: 2px solid #09C6AB !important;
+  border: 2px solid #f17329 !important;
+  /* border: 2px solid #09C6AB !important; */
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: #0adec0 !important;
-  border-color: #0adec0 !important;
+  /* background: #0adec0 !important;
+  border-color: #0adec0 !important; */
+  background: #f17329 !important;
+  border-color: #f17329 !important;
 }
 .btn-primary.btn-outline {
   background: transparent;
