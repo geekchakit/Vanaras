@@ -22,7 +22,7 @@ body {
 .CustomA{
   color: white;
 }
-
+#more {display: none;}
 .CustomA:hover{
   color: white;
 }

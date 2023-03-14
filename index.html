@@ -51,6 +51,8 @@
 
     <!-- Modernizr JS -->
     <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- Post CSS -->
+    <link rel="stylesheet" href="css/BestAttraction.css"></style>
     <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
     <script src="js/respond.min.js"></script>
@@ -115,6 +117,9 @@
                         <div class="row row-mt-15em">
                             <div class="col-md-7 mt-text animate-box" data-animate-effect="fadeInUp">
                                 <h1>Planing Trip To Varanasi?</h1>
+                                <p>Fill The Form To get Free Consultation Call and More Information About Varanasi Tour From Darshan Rath Holidays</p>
+                                <p>Customise Your Itinerary Get Discount Upto 25% on First Booking</p>
+                                <p>Want Detailed and Free Itiniteray in Whatsapp<a href="https://wa.me/+918117887130/?text=Hello"><i class="bi bi-whatsapp"></i> Click Here</a></p>
                             </div>
                             <div class="col-md-4 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
                                 <div class="form-wrap">
@@ -122,7 +127,7 @@
 
                                         <div class="tab-content">
                                             <div class="tab-content-inner active" data-content="signup">
-                                                <h3>Book Your Trip</h3>
+                                                <h3>Get Free Tour Itinerary</h3>
                                                 <form action="#">
                                                     <div class="row form-group">
                                                         <div class="col-md-12">
@@ -142,9 +147,9 @@
                                                             <input type="number" id="contactNo" placeholder="Contact No" class="form-control">
                                                         </div>
                                                     </div>
-                                                    <div class="row form-group">
+                                                    <!-- <div class="row form-group">
                                                         <div class="col-md-12">
-                                                            <!-- @*<label for="activities">Activities</label>*@ -->
+                                                            @*<label for="activities">Activities</label>*@
                                                             <select name="#" id="adults" class="form-control">
                                                                 <option value="">Adults</option>
                                                                 <option value="1">1</option>
@@ -162,7 +167,7 @@
                                                     </div>
                                                     <div class="row form-group">
                                                         <div class="col-md-12">
-                                                            <!-- @*<label for="activities">Activities</label>*@ -->
+                                                            @*<label for="activities">Activities</label>*@
                                                             <select name="#" id="childs" class="form-control">
                                                                 <option value="">Childs</option>
                                                                 <option value="1">1</option>
@@ -177,7 +182,7 @@
                                                                 <option value="10">10</option>
                                                             </select>
                                                         </div>
-                                                    </div>
+                                                    </div> -->
 
 
                                                     <div class="row form-group">
@@ -189,7 +194,7 @@
 
                                                     <div class="row form-group">
                                                         <div class="col-md-12">
-                                                            <input type="submit" class="btn btn-primary btn-block" value="Submit">
+                                                            <input class="btn btn-primary btn-block" value="Submit" onclick="SendContactForm()">
                                                         </div>
                                                     </div>
                                                 </form>
@@ -207,15 +212,37 @@
                 </div>
             </div>
         </header>
-
-        <div id="VanarasiPackageDiv">
-
+        <div class="gtco-section About" id="AboutTour">
+         <div class="gtco-container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+                    <h2>About Varanasi Tour</h2>
+                    <p style="text-align: justify;">Varanasi also Known as Kashi,or Banaras is one of the world’s continually inhabited cities situated in the banks of holy river The Ganga.Darshan Rath Holidays Kashi Varanasi tour Package helps you to complete your Kashi Tour with utmost satisfaction.<span id="dots">...</span><span id="more">Kashi Vishwanath temple,also known as Golden temple dedicated to Lord Shiva is the 7th out of the 12 Jyotirlinga , main attraction here is the Kashi Vishwanath corridor which has transferred the Vishwanath Temple Yatra completely ,this infrastructural marvel has given a boost to tourism in the holy city.
+                        Residing Behind the Holy Ganga there are 80 Ghats out of which Assi Ghat,dashashwamedh ghat,Manikarnika  Ghat are some of the popular Ghat, one cannot miss the Very famous Ganga Aarti  held every evening
+Apart from temples, Varanasi offers its visitors a splendid tour of many historical establishments such as The Chunar Fort,Ramnagar fort,etc. One cannot afford to miss the street foods of Varanasi which is as elaborate as it’s history
+                      Our Varanasi tour package combines with nearby destinations of Sarnath, Ayodhya,Prayagraj and  Gaya ji. Recent addition of Varanasi Tent city and The Ganga Villas Cruise is going to increase the flow of tourists who are planning banaras trip from around the world.</span>
+Varanasi travel has a lot to offer to its upcoming visitors and we at Darshan Rath Holidays offers the best Varanasi tour package with affordable cost to fulfill your travel plans.
+</p>
+<button class="btn-primary btn-block" onclick="myFunction()" id="myBtn">Read more</button>
+                </div>
+            </div>
+         </div>
         </div>
-        <div class="gtco-section" id="BestPackageDiv">
+        <!-- <div id="VanarasiPackageDiv">
             <div class="gtco-container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-                        <h2>Best Vanaras Package</h2>
+                        <h2>Vanaras Package</h2>
+                        <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+                    </div>
+                </div>
+            </div> 
+        </div> -->
+        <div class="gtco-section" id="VanarasiPackageDiv">
+            <div class="gtco-container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+                        <h2>Vanaras Package</h2>
                         <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
                     </div>
                 </div>
@@ -277,8 +304,116 @@
             </div>
         </div>
         
-        <div id="ContactForm">
+        <div class="gtco-section" id="KashiBestAttraction">
+            <div class="gtco-container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+                        <h2>Kashi Best Attractions</h2>
+                    </div>
+                </div>
+                        <div class="content-wrapper">
+  
+                            <div class="news-card">
+                              <a href="#" class="news-card__card-link"></a>
+                              <img src="https://images.pexels.com/photos/127513/pexels-photo-127513.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="" class="news-card__image">
+                              <div class="news-card__text-wrapper">
+                                <h2 class="news-card__title">Kashi Vishwanath Temple</h2>
+                                <!-- <div class="news-card__post-date">Jan 29, 2018</div> -->
+                                <div class="news-card__details-wrapper">
+                                  <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo tempore repellat? Ullam sed officia iure architecto deserunt distinctio, pariatur&hellip;</p>
+                                  <a href="#" class="news-card__read-more">Contact Us <i class="fas fa-long-arrow-alt-right"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                          
+                            <div class="news-card">
+                              <a href="#" class="news-card__card-link"></a>
+                              <img src="https://images.pexels.com/photos/631954/pexels-photo-631954.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="" class="news-card__image">
+                              <div class="news-card__text-wrapper">
+                                <h2 class="news-card__title">Assi Ghat</h2>
+                                <!-- <div class="news-card__post-date">Jan 29, 2018</div> -->
+                                <div class="news-card__details-wrapper">
+                                  <p class="news-card__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam obcaecati ex natus nulla rem sequi laborum quod fugit&hellip;</p>
+                                  <a href="#" class="news-card__read-more">Contact Us <i class="fas fa-long-arrow-alt-right"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                          
+                            <div class="news-card">
+                              <a href="#" class="news-card__card-link"></a>
+                              <img src="https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="news-card__image">
+                              <div class="news-card__text-wrapper">
+                                <h2 class="news-card__title">Sarnath Museum</h2>
+                                <!-- <div class="news-card__post-date">Jan 29, 2018</div> -->
+                                <div class="news-card__details-wrapper">
+                                  <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis beatae&hellip;</p>
+                                  <a href="#" class="news-card__read-more">Contact Us <i class="fas fa-long-arrow-alt-right"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                          
+                            <div class="news-card">
+                              <a href="#" class="news-card__card-link"></a>
+                              <img src="https://images.pexels.com/photos/248486/pexels-photo-248486.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="" class="news-card__image">
+                              <div class="news-card__text-wrapper">
+                                <h2 class="news-card__title">Kaal Bhairav Temple</h2>
+                                <div class="news-card__post-date">Jan 29, 2018</div>
+                                <div class="news-card__details-wrapper">
+                                  <p class="news-card__excerpt">Lorem ipsum dolor sit amet!</p>
+                                  <a href="#" class="news-card__read-more">Contact Us <i class="fas fa-long-arrow-alt-right"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                          
+                            <div class="news-card">
+                              <a href="#" class="news-card__card-link"></a>
+                              <img src="https://images.pexels.com/photos/206660/pexels-photo-206660.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="" class="news-card__image">
+                              <div class="news-card__text-wrapper">
+                                <h2 class="news-card__title">Ganga Aarti</h2>
+                                <!-- <div class="news-card__post-date">Jan 29, 2018</div> -->
+                                <div class="news-card__details-wrapper">
+                                  <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo tempore repellat? Ullam sed officia iure architecto deserunt distinctio&hellip;</p>
+                                  <a href="#" class="news-card__read-more">Contact Us <i class="fas fa-long-arrow-alt-right"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                          
+                            <div class="news-card">
+                              <a href="#" class="news-card__card-link"></a>
+                              <img src="https://images.pexels.com/photos/210243/pexels-photo-210243.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="" class="news-card__image">
+                              <div class="news-card__text-wrapper">
+                                <h2 class="news-card__title">Sankatmochan Temple</h2>
+                                <!-- <div class="news-card__post-date">Jan 29, 2018</div> -->
+                                <div class="news-card__details-wrapper">
+                                  <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo tempore repellat? Ullam sed officia.</p>
+                                  <a href="#" class="news-card__read-more">Contact Us <i class="fas fa-long-arrow-alt-right"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                          
+                          </div>
+                    </div>
+            </div>    
+        </div>
+        
+        <div class="gtco-section" id="WhyBookWithUs">
+            <div class="gtco-container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+                        <h2>Why Book With Us</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="gtco-section" id="ContactForm">
+            <div class="gtco-container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+                        <h2>Contact Us</h2>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="Copyright-div text-center">
@@ -318,6 +453,17 @@
 
     <!-- Main -->
     <script src="js/main.js"></script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>     -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("YOUR_PUBLIC_KEY");
+   })();
+</script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/site.js"></script>
 
     <style>
         #gtco-footer {
