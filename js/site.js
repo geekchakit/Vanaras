@@ -42,3 +42,11 @@ function myFunction() {
       moreText.style.display = "inline";
     }
   }
+
+  function GoToDiv(ID)
+  {
+    alert('function');
+    $('html, body').animate({
+        scrollTop: $("#"+ID).offset().top
+    }, 2000);
+  }
