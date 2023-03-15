@@ -1,18 +1,9 @@
-function SendContactForm(PackageName)
+function SendContactForm(FormType)
 {
     alert("Clicked");
-    // Email.send({
-    //     Host : "smtp.gmail.com",
-    //     Username : "admin@varanasi.indiaholidaysplanner.com",
-    //     Password : "Gangasharma@123",
-    //     To : 'gangs.sharma17@gmail.com',
-    //     From : "admin@varanasi.indiaholidaysplanner.com",
-    //     Subject : "This is the subject",
-    //     Body : "And this is the body"
-    // }).then(
-    //   message => alert(message)
-    // );
-    var templateParams = {
+    if(FormType=="HeaderForm")
+    {
+      var templateParams = {
         from_name: $("#fullname").val(),
         email_id: $("#mailId").val(),
         contact_no:$("#contactNo").val(),
@@ -25,6 +16,25 @@ function SendContactForm(PackageName)
         }, function(error) {
             swal("Sorry!", "Its not your fault!", "error");
         });
+    }
+
+    else if(FormType=="ContactDiv")
+    {
+      var templateParams = {
+        from_name: $("#fullnameC").val(),
+        email_id: $("#mailIdC").val(),
+        contact_no:$("#contactNoC").val(),
+        message:$("#messageC").val()
+    };
+     
+    emailjs.send('service_67t7hhj', 'template_thv6rqb', templateParams,'nmhVg3RXzbcSkzs_u')
+        .then(function(response) {
+            swal("Good job!", "Your Response Has been submited!", "success");
+        }, function(error) {
+            swal("Sorry!", "Its not your fault!", "error");
+        });
+    }
+    
 }
 
 function myFunction() {

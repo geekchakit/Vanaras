@@ -1490,7 +1490,8 @@ form label {
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #09C6AB;
+  /* border-color: #09C6AB; */
+  border-color: #f17329;
 }
 
 .row-mt-15em {
