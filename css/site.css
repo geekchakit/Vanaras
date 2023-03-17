@@ -14,7 +14,26 @@ body {
 .light {
   background: #f3f5f7;
 }
-
+.why-book {
+  /* border-right: dotted 1px #333; */
+  text-align: center;
+  margin: 50px 0 0 0;
+  height: 70%;
+  padding: 0 20px;
+  /* background: #f17329; */
+}
+.why-col{
+  background: white;
+  height: 300px;
+  width: 250px;
+}
+.why-book i {
+  font-size: 65px;
+  text-align: center;
+  color: #f17329;
+  display: block;
+  margin-bottom: 13px;
+}
 a, a:hover {
   text-decoration: none;
   transition: color 0.3s ease-in-out;
