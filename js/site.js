@@ -1,6 +1,5 @@
 function SendContactForm(FormType)
 {
-    alert("Clicked");
     if(FormType=="HeaderForm")
     {
       var templateParams = {
@@ -55,8 +54,15 @@ function myFunction() {
 
   function GoToDiv(ID)
   {
-    alert('function');
+    alert(ID);
     $('html, body').animate({
         scrollTop: $("#"+ID).offset().top
     }, 2000);
+    $('body').removeClass('offcanvas');
+    $('.js-gtco-nav-toggle').removeClass('active');
+  }
+
+  function SendEnquery()
+  {
+    $("#myModal").modal("show");
   }

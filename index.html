@@ -225,7 +225,7 @@ Varanasi travel has a lot to offer to its upcoming visitors and we at Darshan Ra
                                 <p>INR 5,500/person</p>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <button class="btn btn-primary">Send Enquiry</button>
+                                        <button class="btn btn-primary" onclick="SendEnquery()">Send Enquiry</button>
                                     </div>
                                 </div>
                             </div>
@@ -251,7 +251,7 @@ Varanasi travel has a lot to offer to its upcoming visitors and we at Darshan Ra
                                 <p>INR 5,500/person</p>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <button class="btn btn-primary">Send Enquiry</button>
+                                        <button class="btn btn-primary"onclick="SendEnquery()">Send Enquiry</button>
                                     </div>
                                 </div>
                             </div>
@@ -271,8 +271,7 @@ Varanasi travel has a lot to offer to its upcoming visitors and we at Darshan Ra
                 </div>
                         <div class="content-wrapper">
   
-                            <div class="news-card">
-                              <a href="#" class="news-card__card-link"></a>
+                            <div class="news-card" onclick="SendEnquery()">
                               <img src="https://images.pexels.com/photos/127513/pexels-photo-127513.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="" class="news-card__image">
                               <div class="news-card__text-wrapper">
                                 <h2 class="news-card__title">Kashi Vishwanath Temple</h2>
@@ -284,8 +283,7 @@ Varanasi travel has a lot to offer to its upcoming visitors and we at Darshan Ra
                               </div>
                             </div>
                           
-                            <div class="news-card">
-                              <a href="#" class="news-card__card-link"></a>
+                            <div class="news-card" onclick="SendEnquery()">
                               <img src="https://firebasestorage.googleapis.com/v0/b/exam-module-vikash.appspot.com/o/wp7148097-banaras-wallpapers.jpg?alt=media&token=959a230f-c46a-4eb5-8202-7f49f72a00f3" alt="" class="news-card__image">
                               <div class="news-card__text-wrapper">
                                 <h2 class="news-card__title">Assi Ghat</h2>
@@ -297,8 +295,7 @@ Varanasi travel has a lot to offer to its upcoming visitors and we at Darshan Ra
                               </div>
                             </div>
                           
-                            <div class="news-card">
-                              <a href="#" class="news-card__card-link"></a>
+                            <div class="news-card" onclick="SendEnquery()">
                               <img src="https://firebasestorage.googleapis.com/v0/b/exam-module-vikash.appspot.com/o/sarnath%20Varanasi.jpg?alt=media&token=5ee107af-bd2f-420b-b3ee-80cf32288c4e" alt="" class="news-card__image">
                               <div class="news-card__text-wrapper">
                                 <h2 class="news-card__title">Sarnath Museum</h2>
@@ -310,12 +307,11 @@ Varanasi travel has a lot to offer to its upcoming visitors and we at Darshan Ra
                               </div>
                             </div>
                           
-                            <div class="news-card">
-                              <a href="#" class="news-card__card-link"></a>
+                            <div class="news-card" onclick="SendEnquery()">
                               <img src="https://images.pexels.com/photos/248486/pexels-photo-248486.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="" class="news-card__image">
                               <div class="news-card__text-wrapper">
                                 <h2 class="news-card__title">Kaal Bhairav Temple</h2>
-                                <div class="news-card__post-date">Jan 29, 2018</div>
+                                <!-- <div class="news-card__post-date">Jan 29, 2018</div> -->
                                 <div class="news-card__details-wrapper">
                                   <p class="news-card__excerpt">Lorem ipsum dolor sit amet!</p>
                                   <a href="#" class="news-card__read-more">Contact Us <i class="fas fa-long-arrow-alt-right"></i></a>
@@ -323,8 +319,7 @@ Varanasi travel has a lot to offer to its upcoming visitors and we at Darshan Ra
                               </div>
                             </div>
                           
-                            <div class="news-card">
-                              <a href="#" class="news-card__card-link"></a>
+                            <div class="news-card" onclick="SendEnquery()">
                               <img src="https://firebasestorage.googleapis.com/v0/b/exam-module-vikash.appspot.com/o/ganga%20aarti.jpg?alt=media&token=cb753eba-e362-4d01-bab5-e58b255446ea" alt="" class="news-card__image">
                               <div class="news-card__text-wrapper">
                                 <h2 class="news-card__title">Ganga Aarti</h2>
@@ -336,8 +331,7 @@ Varanasi travel has a lot to offer to its upcoming visitors and we at Darshan Ra
                               </div>
                             </div>
                           
-                            <div class="news-card">
-                              <a href="#" class="news-card__card-link"></a>
+                            <div class="news-card" onclick="SendEnquery()">
                               <img src="https://images.pexels.com/photos/210243/pexels-photo-210243.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="" class="news-card__image">
                               <div class="news-card__text-wrapper">
                                 <h2 class="news-card__title">Sankatmochan Temple</h2>
@@ -465,10 +459,6 @@ Varanasi travel has a lot to offer to its upcoming visitors and we at Darshan Ra
         <!-- </div> -->
 
         <!-- Modal Form -->
-    <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-    Launch demo modal
-  </button>
   
   <!-- Modal -->
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -476,7 +466,7 @@ Varanasi travel has a lot to offer to its upcoming visitors and we at Darshan Ra
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          <h4 class="modal-title" id="myModalLabel">Get Free Tour Itinerary</h4>
         </div>
         <div class="modal-body" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
             <form action="#">
