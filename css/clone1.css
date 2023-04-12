@@ -2159,6 +2159,19 @@ h2 a {
     text-align: center
 }
 
+.wantus_tocall_wp {
+    border: 1px solid #25d366;
+    font-size: 13px;
+    color: #25d366!important;
+    padding: 7px 3px;
+    border-radius: 4px;
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    min-width: 140px;
+    text-align: center
+}
+
 .journey_flight_srp,.tabs_header,.tour_inclusive_content_li {
     border-bottom: 1px solid #e5e5e5
 }
@@ -4474,6 +4487,11 @@ span.grtxt i {
 .wantus_tocall_srp:hover {
     color: #fff!important;
     background: #f17329
+}
+
+.wantus_tocall_wp:hover {
+    color: #fff!important;
+    background: #25d366
 }
 
 .full_size_area_div {
