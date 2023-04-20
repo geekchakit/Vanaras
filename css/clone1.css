@@ -889,7 +889,7 @@ html {
 }
 
 .highlights_inclusive_flights_content .web_arrow_box {
-    left: 305px!important
+    /* left: 305px!important */
 }
 
 .srp_not_found_any_data .trending_india_destination ul li,.srp_not_found_any_data .trending_international_destination ul li {
@@ -1120,7 +1120,7 @@ srp_not_found_any_data .text-center.posrel_call_no_result {
 
 .hotel_new_text_tc ul li:first-child,.hotel_new_text_tc ul li:nth-child(2),.hotel_new_text_tc ul li:nth-child(3),.hotel_new_text_tc ul li:nth-child(4),.hotel_new_text_tc ul li:nth-child(5) {
     font-weight: 400;
-    background: url(https://www.sotc.inhttps://www.sotc.inhttps://www.sotc.inhttps://www.sotc.inhttps://www.sotc.inhttps://firebasestorage.googleapis.com/v0/b/exam-module-vikash.appspot.com/o/imgonline-com-ua-ReplaceColor-rEZtuDmC0v3.jpg?alt=media&token=5df987e8-594f-4e89-b90b-d2f48682e0c8) -23px -187px no-repeat;
+    background: url(https://firebasestorage.googleapis.com/v0/b/exam-module-vikash.appspot.com/o/imgonline-com-ua-ReplaceColor-rEZtuDmC0v3.jpg?alt=media&token=5df987e8-594f-4e89-b90b-d2f48682e0c8) -23px -187px no-repeat;
     list-style: none;
     padding-left: 20px;
     display: list-item;
@@ -2148,8 +2148,9 @@ h2 a {
 
 .wantus_tocall_srp {
     border: 1px solid #f17329;
+    background-color: #f17329;
     font-size: 13px;
-    color: #f17329!important;
+    color: white!important;
     padding: 7px 3px;
     border-radius: 4px;
     display: inherit;
@@ -2161,8 +2162,9 @@ h2 a {
 
 .wantus_tocall_wp {
     border: 1px solid #25d366;
+    background-color: #25d366;
     font-size: 13px;
-    color: #25d366!important;
+    color: white!important;
     padding: 7px 3px;
     border-radius: 4px;
     display: inherit;
@@ -2565,7 +2567,7 @@ li.tour_inclusive_content_li:before {
 }
 
 .tour_inclusive.pdp_details_srp_data ul.col-xs-12 li a span span {
-    background: url(https://firebasestorage.googleapis.com/v0/b/exam-module-vikash.appspot.com/o/imgonline-com-ua-ReplaceColor-rEZtuDmC0v3.jpg?alt=media&token=5df987e8-594f-4e89-b90b-d2f48682e0c8) -298px -113px no-repeat;
+    background: url(https://firebasestorage.googleapis.com/v0/b/exam-module-vikash.appspot.com/o/video_image-lk2C3_iWg.jpg?alt=media&token=8e357082-449e-4c32-aab6-7326316b6399) -298px -113px no-repeat;
     width: 42px;
     height: 42px;
     display: block;
@@ -2585,23 +2587,24 @@ li.tour_inclusive_content_li:before {
 }
 
 .tour_inclusive.pdp_details_srp_data ul.col-xs-12 li a span.tour_inclusive_flights span {
-    background-position: -66px -11px
-}
-
-.tour_inclusive.pdp_details_srp_data ul.col-xs-12 li:hover a span.tour_inclusive_flights span {
-    background-position: -66px -61px
-}
-
-.tour_inclusive.pdp_details_srp_data ul.col-xs-12 li.no_available_data_click_pdp_li a span.tour_inclusive_flights span,.tour_inclusive.pdp_details_srp_data ul.col-xs-12 li.no_available_data_click_pdp_li:hover a span.tour_inclusive_flights span {
-    background-position: -66px -112px
-}
-
-.tour_inclusive.pdp_details_srp_data ul.col-xs-12 li a span.tour_inclusive_hotels span {
+    /* background-position: -66px -11px */
     background-position: -123px -11px
 }
 
+.tour_inclusive.pdp_details_srp_data ul.col-xs-12 li:hover a span.tour_inclusive_flights span {
+    background-position: -123px -11px
+}
+
+.tour_inclusive.pdp_details_srp_data ul.col-xs-12 li.no_available_data_click_pdp_li a span.tour_inclusive_flights span,.tour_inclusive.pdp_details_srp_data ul.col-xs-12 li.no_available_data_click_pdp_li:hover a span.tour_inclusive_flights span {
+    background-position: -123px -11px
+}
+
+.tour_inclusive.pdp_details_srp_data ul.col-xs-12 li a span.tour_inclusive_hotels span {
+    background-position: -182px -11px
+}
+
 .tour_inclusive.pdp_details_srp_data ul.col-xs-12 li:hover a span.tour_inclusive_hotels span {
-    background-position: -123px -61px
+    background-position: -182px -11px
 }
 
 .tour_inclusive.pdp_details_srp_data ul.col-xs-12 li.no_available_data_click_pdp_li a span.tour_inclusive_hotels span,.tour_inclusive.pdp_details_srp_data ul.col-xs-12 li.no_available_data_click_pdp_li:hover a span.tour_inclusive_hotels span {
