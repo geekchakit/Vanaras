@@ -257,7 +257,7 @@ Varanasi travel has a lot to offer to its upcoming visitors and we at Darshan Ra
                                             <p class="col-xs-12 padding-remove text-capitalize">Customized Holidays</p>
                                             <ul class="col-xs-12 padding-remove">
                     
-                                                <li class="tc_highlights_data_srp">
+                                                <li class="tc_highlights_data_srp" onclick="ActiveDiv('VanarasiTempleTourHighlight')">
                                                     <a>
                                                        <span class="tc_highlights_data_srp_bg">
                                                                 <span></span>
@@ -267,34 +267,25 @@ Varanasi travel has a lot to offer to its upcoming visitors and we at Darshan Ra
                                                     <div class="arrow_box visible-xs"></div>
                                                 </li>
                     
-                                                <li>
+                                                <li onclick="ActiveDiv('VanarasiActiveInclusion')">
                                                     <a>
                                                         <span class="tour_inclusive_flights">
                                                             <span></span>
                                                         </span>
-                                                        <div class="inclusion_name_srp_TC">Flights</div>
+                                                        <div class="inclusion_name_srp_TC">Inclusion</div>
                                                     </a>
                                                     <div class="arrow_box visible-xs"></div>
                                                 </li>
-                                                <li>
+                                                <li onclick="ActiveDiv('VanarasiActiveItinery')">
                                                     <a >
                                                        <span class="tour_inclusive_hotels">
                                                             <span></span>
                                                         </span>
-                                                        <div class="inclusion_name_srp_TC">Hotels</div>
+                                                        <div class="inclusion_name_srp_TC">Itinerary</div>
                                                     </a>
                                                     <div class="arrow_box visible-xs"></div>
                                                 </li>
-                                                <li >
-                                                    <a >
-                                                          <span class="tour_inclusive_sightseeing">
-                                                            <span></span>
-                                                        </span>
-                                                        <div class="inclusion_name_srp_TC">Sightseeing</div>
-                                                    </a>
-                                                    <div class="arrow_box visible-xs"></div>
-                                                </li>
-                                                <li >
+                                                <li onclick="ActiveDiv('VanarasiActiveMeal')">
                                                     <a >
                                                        <span class="tour_inclusive_meals">
                                                             <span></span>
@@ -335,7 +326,82 @@ Varanasi travel has a lot to offer to its upcoming visitors and we at Darshan Ra
                                     
                                 </div>
                     
-                            </div>                           
+                            </div>  
+                            <div class="tour_inclusive_tabs tab-content">
+                                <div class="col-lg-7 col-xs-12 highlights_inclusive_flights_content tab-pane highlights_inclusive"
+                                    id="VanarasiTempleTourHighlight">
+                                    <div class="visible-lg visible-md visible-sm web_arrow_box hotArrow-0" style="left: 459px;"></div>
+                                    <div class="tabs_header">
+                                        <span class="tc-highlights"></span>
+                                        <h4>Highlights</h4>
+                                        <span class="tour_inclusive_tabs_remove" onclick="InActiveDiv('VanarasiTempleTourHighlight')">×</span>
+                                    </div>
+                        
+                                    <div class="active_default_msg">
+                                        <ul>
+                                            <li>Evening Ganga Aarti on famous Dashashwamedh Ghat</li>
+                                            <li>Visit Kashi Vishwanath Temple</li>
+                                            <li>Benaras Hindu University (BHU).</li>
+                                            <li>Day Tour Of Sarnath</li>
+                                        </ul>
+                                    </div>
+                        
+                        
+                                </div>
+                        
+                                <div class="col-lg-7 col-xs-12 Inclusion_inclusive_flights_content tab-pane Inclusion_inclusive"
+                                    id="VanarasiActiveInclusion">
+                                    <div class="visible-lg visible-md visible-sm web_arrow_box hotArrow-0" style="left: 459px;"></div>
+                                    <div class="tabs_header">
+                                        <span class="tc-Inclusion"></span>
+                                        <h4>Inclusion</h4>
+                                        <span class="tour_inclusive_tabs_remove" onclick="InActiveDiv('VanarasiActiveInclusion')">×</span>
+                                    </div>
+                        
+                                    <div class="active_default_msg">
+                                        <ul>
+                                            <li>Inclusion</li>
+                                        </ul>
+                                    </div>
+                        
+                        
+                                </div>
+                        
+                                <div class="col-lg-7 col-xs-12 Itinerary_inclusive_flights_content tab-pane Itinerary_inclusive"
+                                    id="VanarasiActiveItinery">
+                                    <div class="visible-lg visible-md visible-sm web_arrow_box hotArrow-0" style="left: 459px;"></div>
+                                    <div class="tabs_header">
+                                        <span class="tc-Itinerary"></span>
+                                        <h4>Itinerary</h4>
+                                        <span class="tour_inclusive_tabs_remove" onclick="InActiveDiv('VanarasiActiveItinery')">×</span>
+                                    </div>
+                        
+                                    <div class="active_default_msg">
+                                        <ul>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                        
+                        
+                                </div>
+                        
+                                <div class="col-lg-7 col-xs-12 meals_inclusive_flights_content tab-pane meals_inclusive"
+                                    id="VanarasiActiveMeal">
+                                    <div class="visible-lg visible-md visible-sm web_arrow_box meaArrow-0" style="left: 509px;"></div>
+                                    <div class="tabs_header">
+                                        <span class="tc-meals"></span>
+                                        <h4>Meals</h4>
+                                        <span class="tour_inclusive_tabs_remove" onclick="InActiveDiv('VanarasiActiveMeal')">×</span>
+                                    </div>
+                                    <ul>
+                                        <li class="tour_inclusive_content_li">
+                                            <div class="col-lg-12">
+                                                Daily Breakfast (except Day 1).
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>                         
                         </li> 
                         <li class="package_detail_holder">
                                                         
@@ -1282,6 +1348,16 @@ Varanasi travel has a lot to offer to its upcoming visitors and we at Darshan Ra
    (function(){
       emailjs.init("YOUR_PUBLIC_KEY");
    })();
+
+   function ActiveDiv(DivId)
+   {
+    $(".tab-pane").removeClass('active');
+    $("#"+DivId).addClass('active');
+   }
+   function InActiveDiv(DivId)
+   {
+    $("#"+DivId).removeClass('active');
+   }
 </script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="js/site.js"></script>
