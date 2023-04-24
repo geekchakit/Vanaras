@@ -882,7 +882,7 @@ html {
 
 .container .strike_number_tc span.INR {
     font-size: 11px!important;
-    color: #999!important;
+    color: #f17329!important;
     margin-right: 1px;
     font-family: WebRupee!important;
     padding: 0 5px
@@ -1909,7 +1909,7 @@ span.package_count_data_sotc.modify_search_data_sotc_no,span.package_count_data_
 .tour_inclusive>ul li a>.inclusion_name_srp_TC {
     float: left;
     width: 100%;
-    color: #333;
+    color: #f17329;
     font-size: 13px;
     padding-top: 10px
 }
@@ -1937,7 +1937,7 @@ span.package_count_data_sotc.modify_search_data_sotc_no,span.package_count_data_
 }
 
 .package_cost div>h4 {
-    color: #333;
+    color: #f17329;
     margin: 0;
     font-size: 25px;
     font-weight: 700;
@@ -1964,6 +1964,7 @@ span.package_count_data_sotc.modify_search_data_sotc_no,span.package_count_data_
 }
 
 .package_cost div>h4 .INR {
+    color: #f17329!important;
     margin-right: -3px;
     font-family: WebRupee;
     line-height: .5em;
@@ -2121,7 +2122,7 @@ span.package_count_data_sotc.modify_search_data_sotc_no,span.package_count_data_
 
 h2 a {
     font-size: 18px;
-    color: #333;
+    color: #f17329;
     font-weight: 700
 }
 
@@ -2442,7 +2443,7 @@ h2 a {
 }
 
 .package_detail_holder p,.package_detail_holder p span {
-    color: #333!important;
+    color: #f17329!important;
     font-size: 13px!important;
     font-family: Lato,sans-serif!important
 }
@@ -5039,7 +5040,9 @@ span.grtxt i {
         border-radius: 0;
         border: 0 solid #e5e5e5
     }
-
+    .P-Text{
+       color: #f17329;
+    }
     .col-sm-3.trip_schedule.srp-pkgbox.tc_srp_calculation_area.package_cost {
         border-radius: 0 0 10px 10px;
         border: 0 solid #ccc;
