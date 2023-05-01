@@ -55,9 +55,39 @@ function myFunction() {
   function GoToDiv(ID)
   {
     alert(ID);
-    $('html, body').animate({
+    if($(window).width() > 739)
+    {
+      alert('PC');
+      $('html, body').animate({
         scrollTop: $("#"+ID).offset().top
-    }, 2000);
+      }, 1000);
+    }
+    else{
+      alert('MOBILE');
+      if(ID=="VanarasiPackageDiv")
+      {
+        var height = $('body').height();
+        $('html, body').animate({
+          scrollTop: height/1.5
+        }, 1000);
+      }
+      else if(ID=="KashiBestAttraction")
+      {
+        var height = $('body').height();
+        $('html, body').animate({
+          scrollTop: height/0.4
+        }, 1000);
+      }
+      else
+      {
+        //Contact Scroll
+        var height = $('body').height();
+        $('html, body').animate({
+          scrollTop: height/0.29
+        }, 1000);
+      }
+      
+    }
     $('body').removeClass('offcanvas');
     $('.js-gtco-nav-toggle').removeClass('active');
   }
@@ -65,4 +95,31 @@ function myFunction() {
   function SendEnquery()
   {
     $("#myModal").modal("show");
+  }
+
+  function PackageEnquiry(PackageName)
+  {
+    $("#PackageModal").modal("show");
+
+    $("#PackageEnquirySent").click(function(){
+      var templateParams = {
+        from_name: $("#fullnamePKG").val(),
+        email_id: $("#mailIdPKG").val(),
+        contact_no:$("#contactNoPKG").val(),
+        package_name:PackageName,
+        message:$("#messagePKG").val()
+    };
+     
+    emailjs.send('service_67t7hhj', 'template_thv6rqb', templateParams,'nmhVg3RXzbcSkzs_u')
+        .then(function(response) {
+            swal("Good job!", "Your Response Has been submited!", "success");
+            $("#fullnamePKG").val('');
+            $("#mailIdPKG").val('');
+            $("#contactNoPKG").val('');
+            $("#messagePKG").val('');
+            $("#PackageModal").modal("hide");
+        }, function(error) {
+            swal("Sorry!", "Its not your fault!", "error");
+        });
+    })
   }
