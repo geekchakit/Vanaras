@@ -54,16 +54,13 @@ function myFunction() {
 
   function GoToDiv(ID)
   {
-    alert(ID);
     if($(window).width() > 739)
     {
-      alert('PC');
       $('html, body').animate({
         scrollTop: $("#"+ID).offset().top
       }, 1000);
     }
     else{
-      alert('MOBILE');
       if(ID=="VanarasiPackageDiv")
       {
         var height = $('body').height();
@@ -89,7 +86,8 @@ function myFunction() {
       
     }
     $('body').removeClass('offcanvas');
-    $('.js-gtco-nav-toggle').removeClass('active');
+    $('body').removeClass('overflow');
+   $('.js-gtco-nav-toggle').removeClass('active');
   }
 
   function SendEnquery()
