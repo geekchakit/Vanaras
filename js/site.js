@@ -51,7 +51,17 @@ function myFunction() {
       moreText.style.display = "inline";
     }
   }
-
+  
+  if($(window).width() < 739)
+  {
+    $(".mobileCall").prop('hidden',false);
+    $('.pcCall').prop('hidden',true);
+  }
+  else{
+    $(".mobileCall").prop('hidden',true);
+    $('.pcCall').prop('hidden',false);
+  }
+  
   function GoToDiv(ID)
   {
     if($(window).width() > 739)
