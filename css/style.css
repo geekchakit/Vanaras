@@ -83,6 +83,34 @@ align-items: center;
   content: "";
 }
 
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+ .tag {
+  margin: 0 3px 3px 0;
+  display: inline-block;
+  position: absolute;
+  width: 120px;
+  top: 23px;
+  color: #fff;
+  background: #FC5B62;
+  left: 0;
+  padding: 8px 0 8px 10px;
+  font-weight: bold;
+  font-size: 14px;
+  -webkit-border-top-right-radius: 20px;
+  -webkit-border-bottom-right-radius: 20px;
+  -moz-border-radius-topright: 20px;
+  -moz-border-radius-bottomright: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.blinking{
+  animation: blinker 1s linear infinite;
+}
 a {
   color: #09C6AB;
   -webkit-transition: 0.5s;
@@ -951,6 +979,11 @@ form label {
   }
 }
 .gtco-heading p {
+  font-size: 20px;
+  line-height: 1.5;
+  color: gray;
+}
+.ContactA {
   font-size: 20px;
   line-height: 1.5;
   color: gray;
