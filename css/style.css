@@ -111,6 +111,21 @@ align-items: center;
 	box-shadow: 2px 2px 3px #999;
   z-index:100;
 }
+.why-book {
+  /* border-right: dotted 1px #333; */
+  text-align: center;
+  margin: 50px 0 0 0;
+  height: 70%;
+  padding: 0 20px;
+  /* background: #f17329; */
+}
+.why-book i {
+  font-size: 65px;
+  text-align: center;
+  color: #f17329;
+  display: block;
+  margin-bottom: 13px;
+}
 .float:hover{
   color:white;
 }

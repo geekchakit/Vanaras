@@ -44,7 +44,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <!-- SCSS For Cards -->
-    <link rel="stylesheet" href="css/site.css">
+    <!-- <link rel="stylesheet" href="css/site.css"> -->
 
     <!-- Modernizr JS -->
     <script src="js/modernizr-2.6.2.min.js"></script>
@@ -178,7 +178,7 @@
 
                                                     <div class="row form-group">
                                                         <div class="col-md-12">
-                                                            <input class="btn btn-primary btn-block" value="Submit" onclick="SendContactForm('HeaderForm')">
+                                                            <input class="btn btn-primary btn-block" id="SentFromForm" value="Submit" onclick="SendContactForm('HeaderForm')">
                                                         </div>
                                                     </div>
                                                 </form>
@@ -1639,7 +1639,7 @@ Varanasi travel has a lot to offer to its upcoming visitors and we at Darshan Ra
 
                                             <div class="row form-group">
                                                 <div class="col-md-12">
-                                                    <input class="btn btn-primary btn-block" value="Submit" onclick="SendContactForm('ContactDiv')">
+                                                    <input class="btn btn-primary btn-block" id="SentFromContact" value="Submit" onclick="SendContactForm('ContactDiv')">
                                                 </div>
                                             </div>
                                         </form>
@@ -1704,7 +1704,7 @@ Varanasi travel has a lot to offer to its upcoming visitors and we at Darshan Ra
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" onclick="SendContactForm('ContactDiv')">Send</button>
+          <button type="button" class="btn btn-primary" id="SentResponse" onclick="SendContactForm('ContactDiv')">Send</button>
         </div>
       </div>
     </div>
@@ -1788,7 +1788,10 @@ Varanasi travel has a lot to offer to its upcoming visitors and we at Darshan Ra
     <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>     -->
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        
 </script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TNNHKCPDWS"></script>
 <script type="text/javascript">
    (function(){
       emailjs.init("YOUR_PUBLIC_KEY");
@@ -1803,10 +1806,15 @@ Varanasi travel has a lot to offer to its upcoming visitors and we at Darshan Ra
    {
     $("#"+DivId).removeClass('active');
    }
+
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TNNHKCPDWS');
 </script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="js/site.js"></script>
-
     <style>
         #gtco-footer {
             background: url(https://firebasestorage.googleapis.com/v0/b/exam-module-vikash.appspot.com/o/wallpaperflare.com_wallpaper.jpg?alt=media&token=bad19b23-8891-4780-b4f1-1444a31748e0);

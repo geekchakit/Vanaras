@@ -1,7 +1,9 @@
 function SendContactForm(FormType)
 {
+  
     if(FormType=="HeaderForm")
     {
+      $("#SentFromForm").prop('disabled',true);
       var templateParams = {
         from_name: $("#fullname").val(),
         email_id: $("#mailId").val(),
@@ -12,13 +14,17 @@ function SendContactForm(FormType)
     emailjs.send('service_67t7hhj', 'template_thv6rqb', templateParams,'nmhVg3RXzbcSkzs_u')
         .then(function(response) {
             swal("Good job!", "Your Response Has been submited!", "success");
+            $("#SentFromForm").prop('disabled',false);
         }, function(error) {
             swal("Sorry!", "Its not your fault!", "error");
+            $("#SentFromForm").prop('disabled',false);
         });
     }
 
     else if(FormType=="ContactDiv")
     {
+      $("#SentResponse").prop('disabled',true);
+      $("#SentFromContact").prop('disabled',true);
       var templateParams = {
         from_name: $("#fullnameC").val(),
         email_id: $("#mailIdC").val(),
@@ -29,8 +35,12 @@ function SendContactForm(FormType)
     emailjs.send('service_67t7hhj', 'template_thv6rqb', templateParams,'nmhVg3RXzbcSkzs_u')
         .then(function(response) {
             swal("Good job!", "Your Response Has been submited!", "success");
+            $("#SentResponse").prop('disabled',false);
+            $("#SentFromContact").prop('disabled',false);
         }, function(error) {
             swal("Sorry!", "Its not your fault!", "error");
+            $("#SentResponse").prop('disabled',false);
+            $("#SentFromContact").prop('disabled',false);
         });
     }
     
@@ -110,6 +120,7 @@ function myFunction() {
     $("#PackageModal").modal("show");
 
     $("#PackageEnquirySent").click(function(){
+      $("#PackageEnquirySent").prop('disabled',true);
       var templateParams = {
         from_name: $("#fullnamePKG").val(),
         email_id: $("#mailIdPKG").val(),
@@ -126,8 +137,10 @@ function myFunction() {
             $("#contactNoPKG").val('');
             $("#messagePKG").val('');
             $("#PackageModal").modal("hide");
+            $("#PackageEnquirySent").prop('disabled',false);
         }, function(error) {
             swal("Sorry!", "Its not your fault!", "error");
+            $("#PackageEnquirySent").prop('disabled',false);
         });
     })
   }
