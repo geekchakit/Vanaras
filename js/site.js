@@ -43,6 +43,40 @@ function SendContactForm(FormType)
             $("#SentFromContact").prop('disabled',false);
         });
     }
+    else{
+      //alert('else');
+      if(FormType=="BModal")
+      {
+        //  alert('BModal');
+         if($('contactNoBModalval')=="")
+         {
+          $('#contactNoBModalval').prop('hidden',false);
+         }
+         else{
+          $('#contactNoBModalval').prop('hidden',true);
+        $("#SentResponse").prop('disabled',true);
+        $("#SentFromContact").prop('disabled',true);
+        var templateParams = {
+          from_name: $("#fullnameBModal").val(),
+          email_id: $("#mailIdBModal").val(),
+          contact_no:$("#contactNoBModal").val(),
+          message:$("#messageBModal").val()
+      };
+       
+      emailjs.send('service_67t7hhj', 'template_thv6rqb', templateParams,'nmhVg3RXzbcSkzs_u')
+          .then(function(response) {
+              swal("Good job!", "Your Response Has been submited!", "success");
+              $("#SentResponse").prop('disabled',false);
+              $("#SentFromContact").prop('disabled',false);
+              $("#myModal").modal("hide");
+          }, function(error) {
+              swal("Sorry!", "Its not your fault!", "error");
+              $("#SentResponse").prop('disabled',false);
+              $("#SentFromContact").prop('disabled',false);
+          });
+         }
+      }
+    }
     
 }
 
