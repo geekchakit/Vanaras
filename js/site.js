@@ -8,7 +8,8 @@ function SendContactForm(FormType)
         from_name: $("#fullname").val(),
         email_id: $("#mailId").val(),
         contact_no:$("#contactNo").val(),
-        message:$("#message").val()
+        message:$("#message").val(),
+        website:"Varanasi"
     };
      
     emailjs.send('service_67t7hhj', 'template_thv6rqb', templateParams,'nmhVg3RXzbcSkzs_u')
@@ -29,7 +30,8 @@ function SendContactForm(FormType)
         from_name: $("#fullnameC").val(),
         email_id: $("#mailIdC").val(),
         contact_no:$("#contactNoC").val(),
-        message:$("#messageC").val()
+        message:$("#messageC").val(),
+        website:"Varanasi"
     };
      
     emailjs.send('service_67t7hhj', 'template_thv6rqb', templateParams,'nmhVg3RXzbcSkzs_u')
@@ -60,7 +62,8 @@ function SendContactForm(FormType)
           from_name: $("#fullnameBModal").val(),
           email_id: $("#mailIdBModal").val(),
           contact_no:$("#contactNoBModal").val(),
-          message:$("#messageBModal").val()
+          message:$("#messageBModal").val(),
+          website:"Varanasi"
       };
        
       emailjs.send('service_67t7hhj', 'template_thv6rqb', templateParams,'nmhVg3RXzbcSkzs_u')
@@ -160,7 +163,8 @@ function myFunction() {
         email_id: $("#mailIdPKG").val(),
         contact_no:$("#contactNoPKG").val(),
         package_name:PackageName,
-        message:$("#messagePKG").val()
+        message:$("#messagePKG").val(),
+        website:"Varanasi"
     };
      
     emailjs.send('service_67t7hhj', 'template_thv6rqb', templateParams,'nmhVg3RXzbcSkzs_u')
