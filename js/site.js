@@ -6,7 +6,7 @@ function SendContactForm(FormType)
       $("#SentFromForm").prop('disabled',true);
       var templateParams = {
         from_name: $("#fullname").val(),
-        email_id: $("#mailId").val(),
+        //email_id: $("#mailId").val(),
         contact_no:$("#contactNo").val(),
         message:$("#message").val(),
         website:"Varanasi"
@@ -34,7 +34,7 @@ function SendContactForm(FormType)
       $("#SentFromContact").prop('disabled',true);
       var templateParams = {
         from_name: $("#fullnameC").val(),
-        email_id: $("#mailIdC").val(),
+        //email_id: $("#mailIdC").val(),
         contact_no:$("#contactNoC").val(),
         message:$("#messageC").val(),
         website:"Varanasi"
@@ -72,7 +72,7 @@ function SendContactForm(FormType)
         $("#SentFromContact").prop('disabled',true);
         var templateParams = {
           from_name: $("#fullnameBModal").val(),
-          email_id: $("#mailIdBModal").val(),
+          //email_id: $("#mailIdBModal").val(),
           contact_no:$("#contactNoBModal").val(),
           message:$("#messageBModal").val(),
           website:"Varanasi"
@@ -178,7 +178,7 @@ function myFunction() {
       $("#PackageEnquirySent").prop('disabled',true);
       var templateParams = {
         from_name: $("#fullnamePKG").val(),
-        email_id: $("#mailIdPKG").val(),
+        //email_id: $("#mailIdPKG").val(),
         contact_no:$("#contactNoPKG").val(),
         package_name:PackageName,
         message:$("#messagePKG").val(),
@@ -195,7 +195,7 @@ function myFunction() {
         .then(function(response) {
             swal("Good job!", "Your Response Has been submited!", "success");
             $("#fullnamePKG").val('');
-            $("#mailIdPKG").val('');
+            //$("#mailIdPKG").val('');
             $("#contactNoPKG").val('');
             $("#messagePKG").val('');
             $("#PackageModal").modal("hide");
